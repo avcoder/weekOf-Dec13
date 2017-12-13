@@ -181,3 +181,32 @@ export { number, inc };
 ```
 
 ## Challenge get your madlibs to work via SystemJS.
+
+```html
+    <script src="https://jspm.io/system@0.19.js"></script>
+    <script>
+        System.config({ transpiler: 'babel' });
+        System.import('./index.js');
+    </script>
+    <script src="./index.js"></script>
+```
+
+```js
+import myWords from "npm:pub2npm";
+
+console.log(myWords.all);
+console.log(myWords.random());
+console.log(myWords.next());
+console.log(myWords.nextul());
+
+// const app = document.getElementById("app");
+// app.innerHTML = `
+// <p>Pizza was invented by a ${myWords.nextul()} ${myWords.nextul()} chef named ${myWords.nextul()}.
+// To make pizza, you need to take a lump of ${myWords.nextul()}, and make a thin, round ${myWords.nextul()} ${myWords.nextul()}.
+// Then you cover it with ${myWords.nextul()} sauce, ${myWords.nextul()} cheese, and fresh chopped ${myWords.nextul()}.
+// Next you have to bake it in a very hot ${myWords.nextul()}.
+// When it is done, cut it into ${myWords.nextul()} ${myWords.nextul()}.
+// Some kids like ${myWords.nextul()} pizza the best, but my favourite is the ${myWords.nextul()} pizza.
+// If I could, I would eat pizza ${myWords.nextul()} times a day!</p>
+// `;
+```

@@ -138,7 +138,7 @@ import { AllHtmlEntities } from "npm:html-entities";
 const entities = new AllHtmlEntities();
 ```
 
-# Module Loaders - runs at buildtime
+# Module Bundlers - runs at buildtime
 
 * Webpack
 * Browserify - not in popular use anymore

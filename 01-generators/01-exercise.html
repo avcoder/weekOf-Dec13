@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="app"></p>
+
+    <script>
+        // Step 1 - insert random words according to the comment beside each array element
+        const words = [
+            "", // adjective
+            "", // nationality
+            "", // name
+            "", // noun
+            "", // adjective
+            "", // noun
+            "", // adjective
+            "", // adjective
+            "", // plural nouns
+            "", // noun
+            "", // number
+            "", // shapes
+            "", // food
+            "", // food
+            "" // number
+        ];
+
+        // Step 2 - declare a generator function called nextWord that will iterate over each of the above words
+        function_ ________________  {
+
+
+        }
+        // Step 3 - Create an expression that calls nextWord()
+        let word = nextWord();
+
+
+        // Step 4 - display it but replace each ________ with the appropriate template literal ${ word.next().value }
+        const app = document.getElementById("app");
+        app.innerHTML = `
+  <p>Pizza was invented by a __________ _____________ chef named __________.
+  To make pizza, you need to take a lump of __________, and make a thin, round __________ __________.
+  Then you cover it with __________ sauce, __________ cheese, and fresh chopped __________.
+  Next you have to bake it in a very hot __________.
+  When it is done, cut it into __________ __________.
+  Some kids like __________ pizza the best, but my favourite is the __________ pizza.
+  If I could, I would eat pizza __________ times a day!</p>
+  `;
+
+// Challenge : use a dictionary API to insert random words for you
+// Challenge : or modify above to be in a Vue framework using input boxes to allow user to type in random words
+    </script>
+</body>
+
+</html>
